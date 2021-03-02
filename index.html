@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Néomorphisme</title>
+  <link rel="stylesheet" href="neomorphism.css">
+</head>
+<body>
+  <div class="container">
+    <div id="neomorphism">
+      <div class="box-btns">
+        <div class="btn-groupe">
+          <input type="radio" class="radio-btn-hide" name="btn-neo" id="a" value="suisse">
+          <label for="a" class="label-plus-btn">
+            <span class="text">Suisse</span>
+            <div class="indicator"></div>
+          </label>
+        </div>
+        <div class="btn-groupe">
+          <input type="radio" class="radio-btn-hide" name="btn-neo" id="b" value="mexique">
+          <label for="b" class="label-plus-btn">
+            <span class="text">Mexique</span>
+            <div class="indicator"></div>
+          </label>
+        </div>
+        <div class="btn-groupe">
+          <input type="radio" class="radio-btn-hide" name="btn-neo" id="c" value="canada">
+          <label for="c" class="label-plus-btn">
+            <span class="text">Canada</span>
+            <div class="indicator"></div>
+          </label>
+        </div>
+        <div class="btn-groupe">
+          <input type="radio" class="radio-btn-hide" name="btn-neo" id="d" value="japon">
+          <label for="d" class="label-plus-btn">
+            <span class="text">Japon</span>
+            <div class="indicator"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="btn3">
+      <div class="ligne"></div>
+    </div>
+  </div>
+</body>
+<script>
+  const btn = document.querySelector('.btn3');
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('active');
+  })
+</script>
+</html>
